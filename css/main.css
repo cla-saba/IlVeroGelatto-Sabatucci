@@ -339,7 +339,8 @@ textarea {
 }
 
 /* Estilo con media queries */
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 575px) {
+  /* GENERAL */
   body {
     background-color: #b28267;
     background-image: unset;
@@ -357,6 +358,11 @@ textarea {
     font-size: 10px;
   }
 
+  /* INDEX */
+  /* NOSOTROS */
+  /* SABORES */
+  /* SUCURSALES */
+  /* CONTACTO */
   #nosotros p {
     font-size: 6px;
   }
@@ -405,7 +411,7 @@ textarea {
     text-shadow: #b28267;
   }
 }
-@media only screen and (max-width: 834px) and (min-width: 415px) {
+@media only screen and (max-width: 767px) and (min-width: 576px) {
   body {
     background-color: #b28267;
     background-image: unset;
