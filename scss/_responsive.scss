@@ -1,0 +1,107 @@
+/* Estilo con media queries */
+
+@media only screen and (max-width: 415px) {
+  body {
+    background-color: #b28267;
+    background-image: unset;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  section h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 10px;
+  }
+  #nosotros p {
+    font-size: 6px;
+  }
+  .redesDelFooter {
+    display: flex;
+    width: 30%;
+    justify-content: inherit;
+  }
+  nav {
+    display: none;
+  }
+  #sucursalesMain {
+    color: black;
+    display: grid;
+    grid-template-areas:
+      "sucursal1"
+      "sucursal2";
+    grid-gap: 20px;
+  }
+  main section h3 {
+    text-align: left;
+    text-shadow: 3px 3px 3px #b28267;
+  }
+  div img {
+    width: 60%;
+    height: 60%;
+  }
+  .sucursal1 {
+    grid-area: sucursal1;
+  }
+  .sucursal2 {
+    grid-area: sucursal2;
+  }
+  .estiloCuadro {
+    border-bottom: 6px solid darkred;
+    border-right: 6px solid darkred;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+    text-shadow: #b28267;
+  }
+}
+
+@media only screen and (max-width: 834px) and (min-width: 415px) {
+  body {
+    background-color: #b28267;
+    background-image: unset;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  section h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  #nosotros p {
+    font-size: 8px;
+  }
+  .redesDelFooter {
+    display: flex;
+    width: 30%;
+    justify-content: inherit;
+  }
+  nav {
+    display: none;
+  }
+  #sucursalesMain {
+    color: black;
+    display: grid;
+    grid-template-areas:
+      "sucursal1"
+      "sucursal2";
+    grid-gap: 20px;
+  }
+  main section h3 {
+    text-align: left;
+    text-shadow: 3px 3px 3px #b28267;
+  }
+  div img {
+    width: 60%;
+    height: 60%;
+  }
+  .sucursal1 {
+    grid-area: sucursal1;
+  }
+  .sucursal2 {
+    grid-area: sucursal2;
+  }
+}
