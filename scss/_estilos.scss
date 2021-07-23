@@ -155,16 +155,17 @@ h3 {
 }
 
 .boxFoto {
-  width: auto;
-  height: auto;
+  width:fit-content;
+  height: fit-content;
   padding: 5px;
+  justify-content: center;
 }
 
 .boxTexto,
 .boxTexto2 {
   font-weight: normal;
   text-align: justify;
-  width: 400px;
+  width: 500px;
   height: 300px;
   border-bottom: 5px solid darkred;
   border-right: 5px solid darkred;
@@ -173,6 +174,10 @@ h3 {
   margin: 10px;
   color: black;
   overflow: hidden;
+}
+
+.h2Invisible {
+  display: none;
 }
 
 /* Estilo nosotros */
