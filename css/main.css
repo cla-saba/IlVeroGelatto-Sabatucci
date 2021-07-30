@@ -21,9 +21,8 @@ body {
 
 header {
   background-color: #b28267;
-  position: sticky;
   top: 0px;
-  height: 20vh;
+  height: 24vh;
   width: 100vw;
   background-image: linear-gradient(90deg, #af4d14, #b1a299);
 }
@@ -78,10 +77,10 @@ nav {
   text-align: center;
 }
 nav ul li {
-  width: 160px;
+  width: 140px;
   display: inline-block;
   background-color: #b28267;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px;
   box-shadow: 2px 2px 4px black;
   margin-top: 4px;
@@ -139,36 +138,20 @@ h3 {
 }
 
 /* Estilo index */
-.mainIndex {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
-  padding-top: 100px;
-}
-
 .boxFoto {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 5px;
+  align-content: center;
   justify-content: center;
 }
 
 .boxTexto,
 .boxTexto2 {
-  font-weight: normal;
   text-align: justify;
-  width: 500px;
-  height: 300px;
   border-bottom: 5px solid darkred;
   border-right: 5px solid darkred;
-  padding: 20px;
   border-radius: 20px;
-  margin: 10px;
   color: black;
   overflow: hidden;
 }
@@ -276,21 +259,49 @@ h3 {
   border-radius: 25px;
 }
 
+.bgcolor {
+  background-color: transparent !important;
+}
+
 /* Estilo sucursales */
-#sucursalesMain div {
-  display: inline-block;
-  padding-top: 5%;
-  padding-left: 15%;
-  text-align: left;
+#sucursalesMain {
+  color: black;
+  display: grid;
+  grid-template-areas: "h2 h2" "sucursal1 sucursal2";
+  grid-gap: 5%;
+}
+#sucursalesMain h2 {
+  grid-area: h2;
 }
 
 .sucursal1 {
-  padding-left: 100px;
+  grid-area: sucursal1;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sucursal2 {
-  margin: 0px;
-  padding-left: 60px;
+  grid-area: sucursal2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section h3 {
+  text-align: center;
+  text-shadow: 3px 3px 3px #b28267;
+}
+
+main section p {
+  text-align: center;
+}
+
+main section img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sucursal2 img {
+  text-align: center;
 }
 
 /* Estilo contacto */
@@ -348,81 +359,15 @@ textarea {
 }
 
 /* Estilo con media queries */
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 40px !important;
+  }
+}
 @media only screen and (max-width: 575px) {
   /* GENERAL */
   body {
-    background-color: #b28267;
-    background-image: unset;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  section h2 {
-    font-size: 12px;
-  }
-
-  h3 {
-    font-size: 10px;
-  }
-
-  /* INDEX */
-  /* NOSOTROS */
-  /* SABORES */
-  /* SUCURSALES */
-  /* CONTACTO */
-  #nosotros p {
-    font-size: 6px;
-  }
-
-  .redesDelFooter {
-    display: flex;
-    width: 30%;
-    justify-content: inherit;
-  }
-
-  nav {
-    display: none;
-  }
-
-  #sucursalesMain {
-    color: black;
-    display: grid;
-    grid-template-areas: "sucursal1" "sucursal2";
-    grid-gap: 20px;
-  }
-
-  main section h3 {
-    text-align: left;
-    text-shadow: 3px 3px 3px #b28267;
-  }
-
-  div img {
-    width: 60%;
-    height: 60%;
-  }
-
-  .sucursal1 {
-    grid-area: sucursal1;
-  }
-
-  .sucursal2 {
-    grid-area: sucursal2;
-  }
-
-  .estiloCuadro {
-    border-bottom: 6px solid darkred;
-    border-right: 6px solid darkred;
-    border-radius: 10px;
-    padding: 5px;
-    margin-left: 5px;
-    text-shadow: #b28267;
-  }
-}
-@media only screen and (max-width: 767px) and (min-width: 576px) {
-  body {
-    background-color: #b28267;
+    background-color: #fdc6a6;
     background-image: unset;
   }
 
@@ -431,11 +376,12 @@ textarea {
   }
 
   section h2 {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
   }
 
   #nosotros p {
@@ -448,25 +394,29 @@ textarea {
     justify-content: inherit;
   }
 
-  nav {
-    display: none;
-  }
-
-  #sucursalesMain {
-    color: black;
-    display: grid;
-    grid-template-areas: "sucursal1" "sucursal2";
-    grid-gap: 20px;
-  }
-
   main section h3 {
     text-align: left;
     text-shadow: 3px 3px 3px #b28267;
   }
 
-  div img {
-    width: 60%;
-    height: 60%;
+  /* INDEX */
+  /* NOSOTROS */
+  .estiloCuadro {
+    border-bottom: 6px solid darkred;
+    border-right: 6px solid darkred;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+    text-shadow: #b28267;
+  }
+
+  /* SABORES */
+  /* SUCURSALES */
+  #sucursalesMain {
+    color: black;
+    display: grid;
+    grid-template-areas: "sucursal1" "sucursal2";
+    grid-gap: 20px;
   }
 
   .sucursal1 {
@@ -475,5 +425,94 @@ textarea {
 
   .sucursal2 {
     grid-area: sucursal2;
+  }
+
+  /* CONTACTO */
+}
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  /* GENERAL */
+  body {
+    background-color: #fdc6a6;
+    background-image: unset;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #nosotros p {
+    font-size: 8px;
+  }
+
+  .redesDelFooter {
+    display: flex;
+    width: 30%;
+    justify-content: inherit;
+  }
+
+  /* SUCURSALES */
+  #sucursalesMain {
+    color: black;
+    display: grid;
+    grid-template-areas: "h2" "sucursal1" "sucursal2";
+    grid-gap: 20px;
+  }
+
+  main section h3 {
+    text-align: center;
+    text-shadow: 3px 3px 3px #b28267;
+  }
+
+  h2 {
+    grid-area: h2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sucursal1 {
+    grid-area: sucursal1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sucursal2 {
+    grid-area: sucursal2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  /* SUCURSALES */
+  #sucursalesMain {
+    color: black;
+    display: grid;
+    grid-template-areas: "sucursal1" "sucursal2";
+    grid-gap: 5%;
+  }
+
+  main section h3 {
+    text-align: left;
+    text-shadow: 3px 3px 3px #b28267;
+  }
+
+  .sucursal1 {
+    grid-area: sucursal1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sucursal2 {
+    grid-area: sucursal2;
+    margin-left: auto;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=main.css.map */

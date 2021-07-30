@@ -11,7 +11,6 @@ body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url(../images/heladeros-Vitrina-gelats1920-4.jpg);
-  // height: 70vh;
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -25,14 +24,11 @@ body {
 
 header {
   background-color: #b28267;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0px;
-  height: 20vh;
+  height: 24vh;
   width: 100vw;
   background-image: linear-gradient(90deg, #af4d14, #b1a299);
 }
-
 main {
   color: white;
   height: 70vh;
@@ -83,10 +79,10 @@ nav {
   text-align: center;
 
   ul li {
-    width: 160px;
+    width: 140px;
     display: inline-block;
     background-color: #b28267;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px;
     box-shadow: 2px 2px 4px black;
     margin-top: 4px;
@@ -146,32 +142,19 @@ h3 {
 
 /* Estilo index */
 
-.mainIndex {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
-  padding-top: 100px;
-}
-
 .boxFoto {
-  width:fit-content;
   height: fit-content;
-  padding: 5px;
+  align-content: center;
   justify-content: center;
+
 }
 
 .boxTexto,
 .boxTexto2 {
-  font-weight: normal;
   text-align: justify;
-  width: 500px;
-  height: 300px;
   border-bottom: 5px solid darkred;
   border-right: 5px solid darkred;
-  padding: 20px;
   border-radius: 20px;
-  margin: 10px;
   color: black;
   overflow: hidden;
 }
@@ -278,24 +261,68 @@ h3 {
     }
   }
 }
+.bgcolor{
+  background-color: transparent !important;
+}
 
 /* Estilo sucursales */
 
-#sucursalesMain div {
-  display: inline-block;
-  padding-top: 5%;
-  padding-left: 15%;
-  text-align: left;
+#sucursalesMain {
+  color: black;
+  display: grid;
+  grid-template-areas:
+    "h2 h2"
+    "sucursal1 sucursal2";
+  grid-gap: 5%;
+  h2 {
+    grid-area: h2;
+  }
 }
-
 .sucursal1 {
-  padding-left: 100px;
+  grid-area: sucursal1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sucursal2 {
+  grid-area: sucursal2;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sucursal2 {
-  margin: 0px;
-  padding-left: 60px;
+main section h3 {
+  text-align: center;
+  text-shadow: 3px 3px 3px #b28267;
 }
+
+main section p{
+  text-align: center;
+}
+
+main section img{
+  margin-left: auto;
+  margin-right: auto;
+}
+.sucursal2 img{
+  text-align: center;
+}
+
+
+// #sucursalesMain div {
+//   display: inline-block;
+//   padding-top: 5%;
+//   // padding-left: 15%;
+//   align-items: center;
+//   text-align: left;
+// }
+
+// .sucursal1 {
+//   // padding-left: 100px;
+// }
+
+// .sucursal2 {
+//   margin: 0px;
+//   // padding-left: 60px;
+// }
 
 /* Estilo contacto */
 
@@ -355,4 +382,3 @@ textarea {
   width: 80px;
   text-align: end;
 }
-
