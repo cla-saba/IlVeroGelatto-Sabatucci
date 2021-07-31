@@ -29,16 +29,21 @@ header {
   width: 100vw;
   background-image: linear-gradient(90deg, #af4d14, #b1a299);
 }
+
 main {
   color: white;
   height: 70vh;
+}
+
+.contenido{
+  min-height: fit-content;
 }
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   align-self: flex-end;
   height: 8vh;
@@ -63,7 +68,7 @@ footer {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: bolder;
   text-shadow: 5px 5px 4px black;
 }
@@ -71,13 +76,12 @@ h1 {
 section p {
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   text-shadow: 5px 3px 3px #b28267;
 }
 
 nav {
   text-align: center;
-
   ul li {
     width: 140px;
     display: inline-block;
@@ -97,7 +101,7 @@ nav {
 }
 
 section h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: black;
   text-align: center;
@@ -120,7 +124,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   color: black;
   text-shadow: 3px 3px 3px #b28267;
-  font-size: 25px;
+  font-size: 1,75rem;
 }
 
 .verde {
@@ -146,7 +150,6 @@ h3 {
   height: fit-content;
   align-content: center;
   justify-content: center;
-
 }
 
 .boxTexto,
@@ -174,6 +177,7 @@ h3 {
   grid-template-rows: 30vh 30vh;
   grid-template-columns: 30vw 30vw;
   grid-gap: 20px;
+  justify-content: center;
 }
 
 #abuelos {
@@ -211,7 +215,7 @@ h3 {
 }
 
 #nosotros p {
-  font-size: 16px;
+  font-size: 1rem;
   text-shadow: 3px 3px 2px #b28267;
   text-align: justify;
 }
@@ -233,12 +237,13 @@ h3 {
   width: 200px;
   margin-top: 25px;
 }
+
 .gustos {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #80380e;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
   padding-top: 50px;
@@ -261,6 +266,7 @@ h3 {
     }
   }
 }
+
 .bgcolor{
   background-color: transparent !important;
 }
@@ -274,15 +280,19 @@ h3 {
     "h2 h2"
     "sucursal1 sucursal2";
   grid-gap: 5%;
-  h2 {
+  .h2 {
     grid-area: h2;
+    font-size: 2.25rem;
+    font-weight: bold;
   }
 }
+
 .sucursal1 {
   grid-area: sucursal1;
   margin-left: auto;
   margin-right: auto;
 }
+
 .sucursal2 {
   grid-area: sucursal2;
   margin-left: auto;
@@ -306,24 +316,6 @@ main section img{
   text-align: center;
 }
 
-
-// #sucursalesMain div {
-//   display: inline-block;
-//   padding-top: 5%;
-//   // padding-left: 15%;
-//   align-items: center;
-//   text-align: left;
-// }
-
-// .sucursal1 {
-//   // padding-left: 100px;
-// }
-
-// .sucursal2 {
-//   margin: 0px;
-//   // padding-left: 60px;
-// }
-
 /* Estilo contacto */
 
 $fondoBeige: #ffe8da;
@@ -339,7 +331,7 @@ main section form {
   p {
     display: inline-block;
     padding: 15px 0px;
-    font-size: 16px;
+    font-size: 1rem;
   }
   div {
     color: black;
