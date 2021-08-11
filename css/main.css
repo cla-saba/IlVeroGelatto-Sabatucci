@@ -432,10 +432,10 @@ textarea {
   #nosotros {
     color: black;
     display: grid;
-    grid-template-areas: "fotoAntigua fotoAntigua" "abuelos padres" "actualidad futuro";
-    grid-template-rows: 30vh 30vh;
-    grid-template-columns: 30vw 30vw;
-    grid-gap: 20px;
+    grid-template-areas: "fotoAntigua" "abuelos" "padres" "actualidad" "futuro";
+    grid-template-rows: 50vh;
+    grid-template-columns: 80vw;
+    grid-gap: 5px;
   }
 
   /* SUCURSALES */
