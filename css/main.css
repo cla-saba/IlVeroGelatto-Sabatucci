@@ -435,7 +435,7 @@ textarea {
     grid-template-areas: "fotoAntigua" "abuelos" "padres" "actualidad" "futuro";
     grid-template-rows: 50vh;
     grid-template-columns: 80vw;
-    grid-gap: 5px;
+    grid-gap: 10px;
   }
 
   /* SUCURSALES */
