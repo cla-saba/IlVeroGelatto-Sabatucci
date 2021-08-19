@@ -18,66 +18,63 @@ body {
 .titulo {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  background-image: linear-gradient(90deg, #af4d14, #b1a299);
+  width: 8.5vw;
 }
 
 header {
   background-color: #b28267;
-  top: 0px;
-  height: 24vh;
-  width: 100vw;
+  height: 18vh;
+  width: 100%;
   background-image: linear-gradient(90deg, #af4d14, #b1a299);
 }
 
 main {
   color: white;
-  height: 70vh;
 }
 
-.contenido{
-  min-height: fit-content;
+.contenido {
+  min-height: max-content;
 }
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
   bottom: 0px;
-  align-self: flex-end;
   height: 8vh;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-image: linear-gradient(90deg, #af4d14, #b1a299);
   p {
     margin-bottom: 0;
+    text-align: center;
   }
 }
 
 .redes {
-  width: 30px;
-  height: 30px;
+  width: 10%;
+  height: 10%;
   float: right;
 }
 
 .redesDelFooter {
   display: flex;
-  width: 20%;
+  width: 20vw;
   justify-content: space-evenly;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: bolder;
-  text-shadow: 5px 5px 4px black;
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
 }
 
 section p {
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 1rem;
-  text-shadow: 5px 3px 3px #b28267;
+  text-shadow: 3px 3px 3px #5b4334;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -88,7 +85,7 @@ nav {
     background-color: #b28267;
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 2px 2px 4px black;
+    box-shadow: 3px 3px 3px black;
     margin-top: 4px;
     color: black;
     font-style: italic;
@@ -106,7 +103,8 @@ section h2 {
   color: black;
   text-align: center;
   text-shadow: 3px 3px 3px #b28267;
-  padding-top: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .submenu {
@@ -124,7 +122,10 @@ h3 {
   font-family: "Roboto", sans-serif;
   color: black;
   text-shadow: 3px 3px 3px #b28267;
-  font-size: 1,75rem;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  margin: 0% !important;
 }
 
 .verde {
@@ -146,12 +147,6 @@ h3 {
 
 /* Estilo index */
 
-.boxFoto {
-  height: fit-content;
-  align-content: center;
-  justify-content: center;
-}
-
 .boxTexto,
 .boxTexto2 {
   text-align: justify;
@@ -159,7 +154,13 @@ h3 {
   border-right: 5px solid darkred;
   border-radius: 20px;
   color: black;
-  overflow: hidden;
+  margin-bottom: 4rem;
+  margin-right: 3.3rem;
+  margin-left: 3.3rem;
+
+  p {
+    text-align: justify;
+  }
 }
 
 .h2Invisible {
@@ -174,58 +175,66 @@ h3 {
   grid-template-areas:
     "abuelos padres fotoAntigua"
     "actualidad futuro fotoAntigua";
-  grid-template-rows: 30vh 30vh;
-  grid-template-columns: 30vw 30vw;
-  grid-gap: 20px;
+  grid-template-rows: 40% 40%;
+  grid-template-columns: 32% 32%;
+  grid-gap: 3rem;
   justify-content: center;
+  align-items: fit-content;
 }
 
 #abuelos {
   grid-area: abuelos;
   align-self: center;
+  height: 40vh;
 }
 
 #padres {
   grid-area: padres;
   align-self: center;
+  height: 40vh;
 }
 
 #actualidad {
   grid-area: actualidad;
   align-self: center;
+  height: 40vh;
 }
 
 #futuro {
   grid-area: futuro;
   align-self: center;
+  height: 40vh;
 }
 
 #fotoAntigua {
   grid-area: fotoAntigua;
   align-self: center;
+  justify-content: center;
 }
 
 #fotoAntigua > img {
-  object-fit: cover;
+  object-fit: scale-down;
   width: 90%;
-  border-bottom: 5px solid darkred;
-  border-right: 5px solid darkred;
+  border-bottom: 3px solid darkred;
+  border-right: 3px solid darkred;
   border-radius: 20px;
   margin: 10px;
 }
 
 #nosotros p {
   font-size: 1rem;
-  text-shadow: 3px 3px 2px #b28267;
+  text-shadow: 3px 3px 3px #b28267;
   text-align: justify;
 }
 
 .estiloCuadro {
-  border-bottom: 5px solid darkred;
-  border-right: 5px solid darkred;
+  width: 100wh;
+  height: max-content;
+  border-bottom: 3px solid darkred;
+  border-right: 3px solid darkred;
   border-radius: 20px;
-  padding: 10px;
-  margin-left: 30px;
+  padding: 5%;
+  align-items: center;
   text-shadow: white;
 }
 
@@ -246,17 +255,17 @@ h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 1rem;
   ul {
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    width: fit-content;
+    padding-bottom: 2rem;
+    width: 27rem;
     li {
       list-style: none;
       padding-left: 10px;
       padding-right: 10px;
-      width: 400px;
+      width: 100%;
       &:hover {
         transition-duration: 750ms;
         color: rgb(255, 255, 255);
@@ -267,10 +276,20 @@ h3 {
   }
 }
 
-.bgcolor{
+.bgcolor {
   background-color: transparent !important;
 }
 
+.colorChoco {
+  background-color: rgba(72, 26, 4, 0.3);
+}
+.colorDdl {
+  background-color: rgba(214, 111, 42, 0.3);
+}
+.colorFruta {
+  background-color: rgba(163, 39, 179, 0.2);
+  margin-bottom: 8vh;
+}
 /* Estilo sucursales */
 
 #sucursalesMain {
@@ -279,10 +298,11 @@ h3 {
   grid-template-areas:
     "h2 h2"
     "sucursal1 sucursal2";
-  grid-gap: 5%;
+  grid-gap: 5rem;
   .h2 {
+    margin-top: 1rem;
     grid-area: h2;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
 }
@@ -291,12 +311,20 @@ h3 {
   grid-area: sucursal1;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20%;
+  img {
+    width: 700px;
+  }
 }
 
 .sucursal2 {
   grid-area: sucursal2;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20%;
+  img {
+    width: 700px;
+  }
 }
 
 main section h3 {
@@ -304,15 +332,15 @@ main section h3 {
   text-shadow: 3px 3px 3px #b28267;
 }
 
-main section p{
+main section p {
   text-align: center;
 }
 
-main section img{
+main section img {
   margin-left: auto;
   margin-right: auto;
 }
-.sucursal2 img{
+.sucursal2 img {
   text-align: center;
 }
 
@@ -327,7 +355,8 @@ $fondoBeige: #ffe8da;
 
 main section form {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 1rem;
+  margin-bottom: 6rem;
   p {
     display: inline-block;
     padding: 15px 0px;
@@ -335,25 +364,22 @@ main section form {
   }
   div {
     color: black;
-    padding-top: 10px;
+    padding-top: 1rem;
   }
   select {
     padding: 3px 40px 3px 10px;
   }
 
-  label {
-    line-height: 1.4;
-  }
-
   input {
-    padding: 3px 2px;
-    font-size: 0.8rem;
+    padding: 0.4rem 2px;
+    font-size: 1rem;
     background-color: $fondoBeige;
   }
 }
 
 textarea {
   resize: none;
+  width: 24rem;
   background-color: $fondoBeige;
 }
 
@@ -366,11 +392,12 @@ textarea {
 }
 
 .contacto .input {
-  width: 250px;
+  width: 17.9rem;
 }
 
 .contacto .label {
   display: inline-block;
-  width: 80px;
+  width: 6rem;
   text-align: end;
+  font-size: 1.1rem;
 }

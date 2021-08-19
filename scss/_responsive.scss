@@ -1,6 +1,6 @@
 /* Estilo con media queries */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 399.98px) {
   /* GENERAL */
 
   body {
@@ -9,30 +9,253 @@
   }
 
   h1 {
-    font-size: 40px !important;
+    font-size: 3rem !important;
   }
 
+  h2,
   .h2 {
-    font-size: 25px;
+    font-size: 2rem !important;
+    text-align: center;
   }
 
   h3 {
-    font-size: 12px;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 0.75rem;
   }
 
+  section p {
+    font-size: 1rem;
+  }
   #nosotros p {
-    font-size: 8px;
+    font-size: 1rem;
   }
   footer {
     position: fixed;
     bottom: 0px;
-    left: 0px;
+    width: 100wh;
+    p {
+      font-size: 0.7rem;
+    }
   }
 
   .redesDelFooter {
     display: flex;
-    width: 30%;
+    width: 40%;
+    justify-content: space-evenly;
+  }
+
+  main section h3 {
+    text-align: left;
+    text-shadow: 3px 3px 3px #b28267;
+  }
+
+  .contenido {
+    min-height: fit-content;
+  }
+
+  .titulo {
+    width: 28vw;
+  }
+
+  /* INDEX */
+
+  .boxTexto {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 99vw;
+  }
+  .boxTexto2 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 4rem;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 99vw;
+  }
+
+  /* NOSOTROS */
+  #titulo {
+    grid-area: titulo;
+  }
+  #futuro {
+    margin-bottom: 6rem;
+  }
+
+  #fotoAntigua img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .estiloCuadro {
+    text-shadow: #b28267;
+  }
+
+  #nosotros {
+    color: black;
+    display: grid;
+    grid-template-areas:
+      "fotoAntigua"
+      "abuelos"
+      "padres"
+      "actualidad"
+      "futuro";
+    grid-template-columns: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* SABORES */
+  .gustos {
+    font-size: 1rem;
+    ul {
+      flex-direction: column;
+      align-items: center;
+      width: 24rem;
+    }
+  }
+  /* SUCURSALES */
+
+  #sucursalesMain {
+    color: black;
+    display: grid;
+    grid-template-areas:
+      "h2"
+      "sucursal1"
+      "sucursal2";
+    grid-gap: 1.2rem;
+    align-content: space-around;
+  }
+
+  .h2 {
+    grid-area: h2;
+  }
+
+  .sucursal1 {
+    grid-area: sucursal1;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .sucursal2 img {
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .sucursal2 {
+    grid-area: sucursal2;
+  }
+
+  main section h3 {
+    text-align: center;
+    text-shadow: 3px 3px 3px #b28267;
+  }
+
+  /* CONTACTO */
+
+  main section form {
+    text-align: center;
+    padding-top: 1rem;
+    p {
+      display: inline-block;
+      padding: 15px 0px;
+      font-size: 1rem;
+    }
+    div {
+      color: black;
+      padding-top: 1rem;
+    }
+    select {
+      padding: 3px 40px 3px 10px;
+    }
+
+    input {
+      padding: 0.4rem;
+      font-size: 0.8rem;
+      background-color: $fondoBeige;
+    }
+  }
+
+  textarea {
+    resize: none;
+    width: 22rem;
+  }
+
+  .acepto {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacto .input {
+    width: 15rem;
+  }
+
+  .contacto .label {
+    display: inline-block;
+    width: 6rem;
+    text-align: end;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 575.98px) {
+  /* GENERAL */
+
+  body {
+    background-color: #fdc6a6;
+    background-image: unset;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    p {
+      font-size: 0.7rem;
+    }
+    .redes {
+      width: 1.8rem;
+      height: 1.8rem;
+      float: right;
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  .boxTexto,
+  .boxTexto2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #nosotros p {
+    font-size: 1rem;
+  }
+
+  .redesDelFooter {
+    display: flex;
+    width: 40%;
     justify-content: inherit;
   }
 
@@ -40,19 +263,29 @@
     text-align: left;
     text-shadow: 3px 3px 3px #b28267;
   }
-  section h2 {
-    font-size: 20px;
+  .titulo {
+    width: 25vw;
   }
 
-  .contenido {
-    min-height: fit-content;
+  /* INDEX */
+  .boxFoto {
+    width: 50vw;
+  }
+
+  .boxTexto,
+  .boxTexto2 {
+    width: 99%;
+  }
+
+  section p {
+    font-size: 1.2rem;
   }
 
   /* NOSOTROS */
 
   .estiloCuadro {
-    border-bottom: 6px solid darkred;
-    border-right: 6px solid darkred;
+    border-bottom: 3px solid darkred;
+    border-right: 3px solid darkred;
     border-radius: 10px;
     padding: 5px;
     margin-left: 5px;
@@ -68,9 +301,31 @@
       "padres"
       "actualidad"
       "futuro";
-    grid-template-rows: 50vh;
-    grid-template-columns: 80vw;
-    grid-gap: 10px;
+    grid-template-rows: 60vh;
+    grid-template-columns: 96vw;
+    grid-gap: 2rem;
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      padding: 2%;
+    }
+  }
+
+  #futuro {
+    margin-bottom: 6rem;
+  }
+
+  #fotoAntigua img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* GUSTOS */
+
+  .gustos {
+    font-size: 1.2rem;
   }
 
   /* SUCURSALES */
@@ -82,7 +337,10 @@
       "h2"
       "sucursal1"
       "sucursal2";
-    grid-gap: 2px;
+    grid-gap: 2rem;
+    h2 {
+      font-size: 2.2rem !important;
+    }
   }
 
   .h2 {
@@ -91,26 +349,46 @@
 
   .sucursal1 {
     grid-area: sucursal1;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   .sucursal2 {
     grid-area: sucursal2;
+    margin-bottom: 10vh;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   main section h3 {
     text-align: center;
     text-shadow: 3px 3px 3px #b28267;
   }
-
-  /* CONTACTO */
 }
 
-@media only screen and (max-width: 575px) and (min-width: 401px) {
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
   /* GENERAL */
 
   body {
     background-color: #fdc6a6;
     background-image: unset;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  section h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
   }
 
   footer {
@@ -119,39 +397,33 @@
     left: 0px;
   }
 
-  h1 {
-    font-size: 60px;
-  }
-
-  section h2 {
-    font-size: 25px;
-  }
-
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  #nosotros p {
-    font-size: 8px;
-  }
-
   .redesDelFooter {
     display: flex;
-    width: 30%;
-    justify-content: inherit;
+    width: 40%;
+    justify-content: space-evenly;
+  }
+  .titulo {
+    width: 20vw;
   }
 
-  main section h3 {
-    text-align: left;
-    text-shadow: 3px 3px 3px #b28267;
+  /* INDEX */
+  .boxFoto {
+    width: 50vw;
+  }
+
+  .boxTexto {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .boxTexto2 {
+    margin: 0 0 8rem 0;
   }
 
   /* NOSOTROS */
 
   .estiloCuadro {
-    border-bottom: 6px solid darkred;
-    border-right: 6px solid darkred;
+    border-bottom: 3px solid darkred;
+    border-right: 3px solid darkred;
     border-radius: 10px;
     padding: 5px;
     margin-left: 5px;
@@ -162,12 +434,29 @@
     color: black;
     display: grid;
     grid-template-areas:
-      "fotoAntigua fotoAntigua"
-      "abuelos padres"
-      "actualidad futuro";
-    grid-template-rows: 30vh 30vh;
-    grid-template-columns: 30vw 30vw;
-    grid-gap: 20px;
+      "fotoAntigua"
+      "abuelos"
+      "padres"
+      "actualidad"
+      "futuro";
+    grid-template-rows: 60vh;
+    grid-template-columns: 96vw;
+    grid-gap: 2rem;
+    h3 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.3rem;
+      padding: 2%;
+    }
+  }
+  #fotoAntigua img {
+    width: 95%;
+    object-fit: cover;
+  }
+
+  #futuro {
+    margin-bottom: 6rem;
   }
 
   /* SUCURSALES */
@@ -179,7 +468,7 @@
       "h2"
       "sucursal1"
       "sucursal2";
-    grid-gap: 2px;
+    grid-gap: 2rem;
   }
 
   .h2 {
@@ -188,92 +477,28 @@
 
   .sucursal1 {
     grid-area: sucursal1;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .sucursal2 {
+    grid-area: sucursal2;
+    margin-bottom: 10vh;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   main section h3 {
     text-align: center;
     text-shadow: 3px 3px 3px #b28267;
   }
-
-  .sucursal2 {
-    grid-area: sucursal2;
-  }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 576px) {
-  /* GENERAL */
-
-  body {
-    background-color: #fdc6a6;
-    background-image: unset;
-  }
-
-  h1 {
-    font-size: 80px;
-  }
-
-  section h2 {
-    font-size: 30px;
-  }
-
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-  }
-
-  #nosotros p {
-    font-size: 8px;
-  }
-
-  .redesDelFooter {
-    display: flex;
-    width: 30%;
-    justify-content: inherit;
-  }
-
-  /* SUCURSALES */
-
-  #sucursalesMain {
-    color: black;
-    display: grid;
-    grid-template-areas:
-      "h2"
-      "sucursal1"
-      "sucursal2";
-    grid-gap: 10px;
-  }
-
-  main section h3 {
-    text-align: center;
-    text-shadow: 3px 3px 3px #b28267;
-  }
-
-  .h2 {
-    grid-area: h2;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .sucursal1 {
-    grid-area: sucursal1;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .sucursal2 {
-    grid-area: sucursal2;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media only screen and (max-width: 991px) and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   /* GENERAL */
 
   body {
@@ -286,7 +511,7 @@
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: bold;
   }
 
@@ -297,13 +522,76 @@
   }
 
   #nosotros p {
-    font-size: 8px;
+    font-size: 1.5rem;
+    padding: 0 1rem 0 1rem;
   }
 
   .redesDelFooter {
     display: flex;
-    width: 30%;
-    justify-content: inherit;
+    width: 40%;
+    justify-content: space-evenly;
+  }
+  .titulo {
+    width: 16vw;
+  }
+
+  .boxTexto,
+  .boxTexto2 {
+    margin-left: 0;
+    margin-right: 0;
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  .boxTexto2 {
+    margin-bottom: 10rem;
+  }
+
+  /* NOSOTROS */
+
+  .estiloCuadro {
+    border-bottom: 3px solid darkred;
+    border-right: 3px solid darkred;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+    text-shadow: #b28267;
+  }
+
+  #nosotros {
+    color: black;
+    display: grid;
+    grid-template-areas:
+      "fotoAntigua"
+      "abuelos"
+      "padres"
+      "actualidad"
+      "futuro";
+    grid-template-rows: 60vh;
+    grid-template-columns: 96vw;
+    grid-gap: 2rem;
+    h3 {
+      font-size: 2.2rem;
+    }
+
+    #futuro {
+      margin-bottom: 7rem;
+    }
+  }
+  #fotoAntigua img {
+    width: 95%;
+    object-fit: cover;
+    max-height: 500px;
+  }
+
+  #futuro {
+    margin-bottom: 4rem;
+  }
+  #abuelos {
+    margin-top: 5rem;
   }
 
   /* SUCURSALES */
@@ -333,18 +621,131 @@
 
   .sucursal1 {
     grid-area: sucursal1;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto;
   }
 
   .sucursal2 {
     grid-area: sucursal2;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto;
+    margin-bottom: 7rem;
+  }
+  /* CONTACTO */
+
+  .contacto .label {
+    display: inline-block;
+    width: 120px;
+    text-align: end;
+  }
+
+  main section form {
+    text-align: center;
+    padding-top: 10px;
+    p {
+      display: inline-block;
+      padding: 15px 0px;
+      font-size: 2rem;
+    }
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* GENERAL */
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  body {
+    background-color: #fdc6a6;
+    background-image: unset;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+  }
+  .redesDelFooter {
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+  }
+
+  .titulo {
+    width: 14vw;
+  }
+
+  /* INDEX */
+
+  .boxTexto {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 99vw;
+  }
+  .boxTexto2 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 4rem;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 99vw;
+  }
+
+  /* NOSOTROS */
+
+  .estiloCuadro {
+    border-bottom: 3px solid darkred;
+    border-right: 3px solid darkred;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+    text-shadow: #b28267;
+    height: initial;
+  }
+
+  #nosotros {
+    color: black;
+    display: grid;
+    grid-template-areas:
+      "fotoAntigua"
+      "abuelos"
+      "padres"
+      "actualidad"
+      "futuro";
+    grid-template-rows: 60vh;
+    grid-template-columns: 96vw;
+    grid-gap: 2rem;
+    h3 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.6rem;
+      padding: 2%;
+    }
+
+    #futuro {
+      margin-bottom: 7rem;
+    }
+  }
+  #fotoAntigua img {
+    max-width: 95%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  #futuro {
+    margin-bottom: 4rem;
+  }
+  #abuelos {
+    margin-top: 5rem;
+  }
+
   /* SUCURSALES */
 
   #sucursalesMain {
@@ -354,18 +755,12 @@
       "h2"
       "sucursal1"
       "sucursal2";
-    grid-gap: 20px;
+    grid-gap: 15px;
   }
 
   main section h3 {
     text-align: center;
     text-shadow: 3px 3px 3px #b28267;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
   }
 
   .h2 {
@@ -378,13 +773,82 @@
 
   .sucursal1 {
     grid-area: sucursal1;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto;
   }
 
   .sucursal2 {
     grid-area: sucursal2;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto;
+    margin-bottom: 7rem;
+  }
+  /* CONTACTO */
+
+  .contacto .label {
+    display: inline-block;
+    width: 120px;
+    text-align: end;
+  }
+
+  main section form {
+    text-align: center;
+    padding-top: 10px;
+    p {
+      display: inline-block;
+      padding: 15px 0px;
+      font-size: 2rem;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1439.9px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  .titulo {
+    width: 12vw;
+  }
+  .boxTexto {
+    margin-top: 1.5rem !important;
+    margin-bottom: 4rem;
+    justify-content: center;
+    width: 33vw;
+  }
+  .boxTexto2 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 4rem;
+    width: 33vw;
+  }
+  .sucursal1 {
+    grid-area: sucursal1;
+    img {
+      width: 30rem;
+    }
+  }
+
+  .sucursal2 {
+    grid-area: sucursal2;
+    img {
+      width: 30rem;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  .titulo {
+    width: 12vw;
+  }
+  .sucursal1 {
+    grid-area: sucursal1;
+    img {
+      width: 35rem;
+    }
+  }
+
+  .sucursal2 {
+    grid-area: sucursal2;
+    img {
+      width: 35rem;
+    }
   }
 }
